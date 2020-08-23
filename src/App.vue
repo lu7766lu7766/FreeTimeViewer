@@ -1,27 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <free-time-viewer :available="data.available" :booked="data.booked" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FreeTimeViewer from './components/FreeTimeViewer.vue'
+import data from './data/data'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    FreeTimeViewer
+  },
+  data: () => ({
+    data
+  })
 }
 </script>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>
+<style lang="stylus"></style>

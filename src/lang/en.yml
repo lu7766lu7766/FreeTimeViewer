@@ -1,0 +1,11 @@
+title: Available times
+subTitle: All the timings listed are in your timezone
+
+day:
+  sun: Sun
+  mon: Mon
+  tue: Tue
+  wed: Wed
+  thu: Thu
+  fri: Fir
+  sat: Sat
